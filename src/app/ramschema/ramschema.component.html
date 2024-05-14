@@ -1,30 +1,32 @@
 <h1>Webbutveckling Ramschema</h1>
 <br>
 <hr>
- 
+
 <div id="search" class="search">
     <h2>Sök:</h2>
-    <input id="inputField" type="search" placeholder="Sök efter kurskod eller kursnamn" [(ngModel)]="searchText" (input)="filterInput()">
+    <input id="inputField" type="search" placeholder="Sök efter kurskod eller kursnamn" [(ngModel)]="searchText"
+        (input)="filterInput()">
 
 </div>
 
- <div class="table-container">
-<table class="table-field" id="tableField">
-    <thead>
-        <tr>
-            <th    (click)="sortCourses('code')">Kurskod <i class="fa-solid fa-arrow-down-a-z"></i></th>
-            <th  (click)="sortCourses('coursename')">Namn <i class="fa-solid fa-arrow-down-a-z"></i></th>
-            <th  (click)="sortCourses('progression')">Progression <i class="fa-solid fa-arrow-down-a-z"></i></th>
-            <th id="syllabus">Länk</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let course of filteredCourseList">
-            <td>{{ course.code }}</td>
-            <td >{{ course.coursename }}</td>
-            <td>{{ course.progression }}</td>
-            <td><a href="{{ course.syllabus }}"  target="_blank"> {{ course.code }} <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>  </td>
-        </tr>
-    </tbody>
-</table>
+<div class="table-container">
+    <table class="table-field" id="tableField">
+        <thead>
+            <tr>
+                <th (click)="sortCourses('code')">Kurskod <i class="fa-solid fa-arrow-down-a-z"></i></th>
+                <th (click)="sortCourses('coursename')">Namn <i class="fa-solid fa-arrow-down-a-z"></i></th>
+                <th (click)="sortCourses('progression')">Progression <i class="fa-solid fa-arrow-down-a-z"></i></th>
+                <th id="syllabus">Länk</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let course of filteredCourseList">
+                <td>{{ course.code }}</td>
+                <td>{{ course.coursename }}</td>
+                <td>{{ course.progression }}</td>
+                <td><a href="{{ course.syllabus }}" target="_blank"> {{ course.code }}
+                     <i class="fa-solid fa-arrow-up-right-from-square"></i> </a> </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
