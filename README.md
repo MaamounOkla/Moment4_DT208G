@@ -1,5 +1,20 @@
-# Moment4DT208G
+# Moment4_DT208G_Angular_Web_Dev_Course_List
 
+
+Author: [Maamoun Okla]
+
+---
+
+## Description
+
+This is a simple Angular SPA (Single Page Application) that list the courses in Web Development program (Webbutvecklingsprogrammet) in MIUN (Mid Sweden University). With the ability to search and sort courses. 
+---
+
+## Live Demo
+
+You can try the live demo [here](https://moment4-dt208g-typescript-maok1900.netlify.app/).
+
+---
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
 
 ## Development server
