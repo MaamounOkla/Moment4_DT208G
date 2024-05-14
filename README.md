@@ -7,7 +7,7 @@ Author: [Maamoun Okla]
 
 ## Description
 
-This is a simple Angular SPA (Single Page Application) that list the courses in Web Development program (Webbutvecklingsprogrammet) in MIUN (Mid Sweden University). With the ability to search and sort courses. 
+This is a simple Angular SPA (Single Page Application) that list the courses in Web Development program (Webbutvecklingsprogrammet) at MIUN (Mid Sweden University). With the ability to search and sort courses. 
 ---
 
 ## Live Demo
